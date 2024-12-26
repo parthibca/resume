@@ -1,0 +1,24 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-contact: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color:white;
+  }
+  
+  .container {
+    align-items: center;
+    position: relative;
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: rgb(116, 116, 111);
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px ;
+  }

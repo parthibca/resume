@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(177, 164, 164);
+    font: 12pt "Tahoma";
+  }
+  
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  /* .page {
+    width: 210mm;
+    position: relative;
+    min-height: 297mm;
+    margin: 50px;
+    display: grid;
+   grid-template-columns: 1fr 2fr;
+    border-radius: 5px;
+    page-break-after: always;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .zone-1 {
+    position: relative;
+    background:rgb(77, 119, 138);
+    padding: 40px;
+    text-color:white;
+  }
+  
+  .zone-2 {
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+  }
+   */
+
+
+   .page {
+    width: 210mm;
+    position: relative;
+    min-height: 297mm;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 5px;
+    page-break-after: always;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.zone-1 {
+  position: relative;
+  background: rgb(77, 119, 138);
+  padding: 40px;
+  
+  text-colour:blck;
+}
+
+/* Modified zone-2 to support full width on continuation pages */
+.zone-2.full-width {
+    grid-column: 1 / -1;
+    background-color: #fff;
+}
+
+/* Ensure proper page breaks in print */
+@media print {
+    .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+    
+    .page:last-child {
+        page-break-after: avoid;
+    }
+}
+
+/* Rest of your existing styles remain the same */
+.zone-1 {
+    position: relative;
+    background: rgb(77, 119, 138);
+    padding: 40px;
+    
+    
+}
+
+.zone-2 {
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+}
+
+
+  /* Profile image */
+  .profile {
+    width: 100%;
+    max-width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Titles and headers */
+  .title h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+    text-colour:black;
+    
+  }
+  
+  .headTitle h1 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-colour:black;
+    }
+  
+  .subTitle h1 {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-top: 5px;
+  }
+  
+  /* Contact box */
+  .contact-box {
+    margin-top: 20px;
+  }
+  
+  .contact-box .call,
+  .contact-box .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-box .call i,
+  .contact-box .email i {
+    margin-right: 10px;
+  }
+  
+  /* Skills */
+  .personal-box .skill-1 {
+    margin-bottom: 10px;
+  }
+  
+  .personal-box .progress {
+    display: flex;
+    align-items: center;
+  }
+  
+  .personal-box .progress .fa-star {
+    color: #f1c40f;
+    
+  }
+  
+  /* Hobbies */
+  .hobbies-box .d-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-colour:rgb(53, 52, 51);
+  }
+  
+  .hobbies-box .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Groups */
+  .group-1,
+  .group-2,
+  .group-3
+  {
+    margin-bottom: 20px;
+  }
+  
+  .group-1 .desc,
+  .group-2 .desc,
+  .group-3 .desc
+  {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .group-2 ul,
+  .group-3 ul
+ {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .group-2 ul li,
+  .group-3 ul li,
+  .group-4 ul li
+ {
+    margin-bottom: 10px;
+  }
+  
+  .group-2 ul li .msg-1,
+  .group-3 ul li .msg-1
+   {
+    font-weight: bold;
+  }
+  
+
+  
